@@ -67,7 +67,8 @@ var shoutIt = function(text){
 };
 
 var twice = function(phrase, shout){
-  shout(phrase); + shout(phrase);
+  console.log(shout(phrase));
+  console.log(shout(phrase));
 };
 
 
