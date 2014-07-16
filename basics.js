@@ -4,10 +4,16 @@
 
 var pets = ['cat', 'dog', 'snake'];
 
+pets.forEach(function(pet) {
+  console.log(pet);
+});
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+
+friend.hair_color = 'green';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -17,6 +23,17 @@ var square_plus_one = function(n){
   squared = n * n;
   return squared + 1;
 };
+
+square_plus_one(3);
+
+squared; // => 9
+
+var square_plus_one = function(n){
+  var squared = n * n;
+  return squared + 1;
+};
+
+
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -32,6 +49,16 @@ def greet(name, excited = false)
 end
 */
 
+function greet(name) {
+  var excited = arguments[1] || false;
+  var greeting = "Hi, " + name + " here!";
+  if(excited) {
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
+}
+
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
 // function as arguments, and calls the provided function twice, both times
@@ -41,3 +68,11 @@ var phrase = 'Odelay!';
 var shoutIt = function(text){
   console.log(text.toUpperCase());
 };
+
+function twice(value, func) {
+  func(value);
+  func(value);
+}
+
+
+
