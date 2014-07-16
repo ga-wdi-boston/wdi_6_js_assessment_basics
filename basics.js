@@ -4,10 +4,15 @@
 
 var pets = ['cat', 'dog', 'snake'];
 
+pets.forEach(function(pet) {
+console.log("I have a " + pet);
+}
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+
+friend.haircolor() = 'blue';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -32,10 +37,24 @@ def greet(name, excited = false)
 end
 */
 
+function greet(name, excited) {
+  var content = "Hi " + name + "here!";
+  var excited = false;
+  var reaction = content.toUppercase;
+  if var excited === true
+    return content.reaction;
+  else
+    return content;
+}
+
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
 // function as arguments, and calls the provided function twice, both times
 // with the value as an argument. Below is an example value and function.
+function twice(callbackfn(value)) {
+ console.log(value);
+ console.log(value);
+}
 
 var phrase = 'Odelay!';
 var shoutIt = function(text){
