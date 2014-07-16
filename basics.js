@@ -3,11 +3,16 @@
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
 
 var pets = ['cat', 'dog', 'snake'];
+  pets.forEach(function(pet) {
+    console.log('I have a ' + pet);
+  });
+
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+  friend.hair_color = 'green';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -15,6 +20,13 @@ var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 var square_plus_one = function(n){
   squared = n * n;
+  return squared + 1;
+};
+
+// 'squared' is set as a global variable as it is missing the 'var'
+
+var square_plus_one = function(n) {
+  var squared = n* n;
   return squared + 1;
 };
 
@@ -31,6 +43,16 @@ def greet(name, excited = false)
   end
 end
 */
+
+function greet(options) {
+  var greeting = "Hi, " + person + ' here!';
+  if(options === true) {
+    return  greeting.toUpperCase;
+  }
+  else{
+    return greeting;
+  }
+}
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
