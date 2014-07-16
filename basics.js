@@ -7,13 +7,13 @@ var pets = ['cat', 'dog', 'snake'];
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
-var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
 // then modify the function (preserving its purpose) to remove the problem.
 
-var square_plus_one = function(n){
+var squarePlusOne = function(n){
   squared = n * n;
   return squared + 1;
 };
