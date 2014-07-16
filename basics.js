@@ -47,7 +47,8 @@ end
 
 var greet = function(name, excited){
   excited = excited || false;
-  return excited ? name.toUpperCase() : name;
+  var greeting = 'Hi, ' + name + ' here!';
+  return excited ? greeting.toUpperCase() : greeting;
 };
 
 ///// Question 5
