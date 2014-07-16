@@ -8,12 +8,16 @@ pets.forEach(function(pet) {
   console.log("I have a " + pet);
 });
 
+// Correct
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 friend.hair_color = 'green';
+
+// Correct
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -24,10 +28,11 @@ var square_plus_one = function(n){
   return squared + 1;
 };
 
-console.log(squared);
 // #squared is a global variable
 
 var squared = n * n;
+
+// Correct
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -46,14 +51,16 @@ end
 var greet = function(name, excited) {
   excited = excited || false;
   var greeting = "Hi, " + name + ' here!';
-  if(excited == true) {
-    return greeting.upcase;
+  if(excited) {
+    return greeting.toUpperCase();
   }
   else {
     return greeting;
   }
 
 };
+
+// Correct except for use of upcase instead of toUpperCase()
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
@@ -70,6 +77,8 @@ var twice = function(value, fn) {
     return fn(value);
   }
 };
+
+// Incorrect - answer is fn(value); replicated on 2 lines with no nesting
 
 // var twice = function(phrase, shoutIt) {
 //   return shoutIt(phrase) {
