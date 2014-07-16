@@ -4,16 +4,27 @@
 
 var pets = ['cat', 'dog', 'snake'];
 
+pets.forEach(function(pet) {
+  console.log("I have a " + pet);
+});
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+
+friend.hair_color = 'green';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
 // then modify the function (preserving its purpose) to remove the problem.
 
 var square_plus_one = function(n){
+  squared = n * n;
+  return squared + 1;
+};
+
+function square_plus_one(n) {
   squared = n * n;
   return squared + 1;
 };
@@ -31,6 +42,11 @@ def greet(name, excited = false)
   end
 end
 */
+
+function greet(name, excited)
+  if (excited === undefined) { excited = false; }
+  return
+}
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
