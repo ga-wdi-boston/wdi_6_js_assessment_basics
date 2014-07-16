@@ -1,13 +1,17 @@
 ///// Question 1
 // Write a loop that would log each element of the array below to the console,
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
-
 var pets = ['cat', 'dog', 'snake'];
+
+pets.forEach(function(pet){
+  console.log('I have a '+ pet);
+});
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
-
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+
+friend.hair_color = 'green';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -15,6 +19,13 @@ var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 var square_plus_one = function(n){
   squared = n * n;
+  return squared + 1;
+};
+
+//The problem is that squared is a global variable so it can
+//be called and reassigned outside of the function.
+var square_plus_one = function(n){
+  var squared = n * n;
   return squared + 1;
 };
 
@@ -31,6 +42,16 @@ def greet(name, excited = false)
   end
 end
 */
+function greet(options){
+  options = options || {};
+  var name = options.name;
+  var excited = options.excited || false;
+
+  if (excited === true){
+    return "Hi, " + name.toUpperCase + "here!" ;
+  }
+  return "Hi, " + name + "here!" ;
+}
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
@@ -40,4 +61,10 @@ end
 var phrase = 'Odelay!';
 var shoutIt = function(text){
   console.log(text.toUpperCase());
+};
+
+var twice = function(value, doFunction){
+  //calls the function twice with the same value
+  doFunction(value);
+  doFunction(value);
 };
