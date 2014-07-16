@@ -4,10 +4,16 @@
 
 var pets = ['cat', 'dog', 'snake'];
 
+pets.forEach(function(pet){
+  console.log('I have a ' + pet);
+});
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
+
+friend.hair_color = 'green';
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -15,6 +21,15 @@ var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 var square_plus_one = function(n){
   squared = n * n;
+  return squared + 1;
+};
+
+//squared is set as a global variable, meaning it can be accessed/modified from
+//outside the method. This is problematic if we used something called squared
+//beyond this method.
+
+var square_plus_one = function(n){
+  var squared = n * n;
   return squared + 1;
 };
 
@@ -32,6 +47,15 @@ def greet(name, excited = false)
 end
 */
 
+var greet = function(name, options){
+  var greeting = 'Hi, ' + name + ' here!';
+  if (options === true){
+   return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
+};
+
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
 // function as arguments, and calls the provided function twice, both times
@@ -41,3 +65,12 @@ var phrase = 'Odelay!';
 var shoutIt = function(text){
   console.log(text.toUpperCase());
 };
+
+var twice = function(phrase, shout){
+  console.log(shout(phrase));
+  console.log(shout(phrase));
+};
+
+
+
+
