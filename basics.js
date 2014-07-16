@@ -8,12 +8,18 @@ pets.forEach(function(pet){
   console.log('I have a ' + pet);
 });
 
+// Score 1 of 1.
+
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 friend.hair_color = 'green';
+
+// Score 2 of 2.
+
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -23,6 +29,9 @@ var square_plus_one = function(n){
   squared = n * n;
   return squared + 1;
 };
+
+// Score 3 of 3.
+
 
 // 'squared' is declared as a global variable and can be accessed and
 // manipulated outside the function scope.
@@ -51,6 +60,9 @@ var greet = function(name, excited){
   return excited ? greeting.toUpperCase() : greeting;
 };
 
+// Score 4 of 4.
+
+
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
 // function as arguments, and calls the provided function twice, both times
@@ -65,3 +77,5 @@ var twice = function(value, passedfunction){
   passedfunction(value);
   passedfunction(value);
 };
+
+// Score 5 of 5.
