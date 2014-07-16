@@ -15,6 +15,9 @@ var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 friend.hair_color = 'green';
 
+//or, but less preferred:
+friend['hair_color'] = 'green';
+
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
 // then modify the function (preserving its purpose) to remove the problem.
@@ -24,9 +27,20 @@ var square_plus_one = function(n){
   return squared + 1;
 };
 
+// MY ANSWER
 function square_plus_one(n) {
   squared = n * n;
   return squared + 1;
+};
+
+// CORRECT ANSWER # 1
+var square_plus_one = function(n){
+  var squared = n * n;
+  return squared + 1;
+};
+// CORRECT ANSWER # 2
+var square_plus_one = function(n){
+  return n * n + 1;
 };
 
 ///// Question 4
@@ -43,10 +57,23 @@ def greet(name, excited = false)
 end
 */
 
+// MY ANSWER - didn't finish
 function greet(name, excited)
   if (excited === undefined) { excited = false; }
   return
 }
+
+// CORRECT ANSWER
+function greet(name, excited) {
+  excited = excited || false;
+  var greeting = "Hi, " + name + ' here!';
+  if(excited) {
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
+}
+
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
@@ -57,3 +84,12 @@ var phrase = 'Odelay!';
 var shoutIt = function(text){
   console.log(text.toUpperCase());
 };
+
+// CORRECT ANSWER
+
+function twice(value, func) {
+  func(value);
+  func(value);
+}
+
+twice(phrase, shoutIt);
