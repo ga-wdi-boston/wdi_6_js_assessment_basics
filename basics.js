@@ -42,15 +42,13 @@ def greet(name, excited = false)
   end
 end
 */
-function greet(options){
-  options = options || {};
-  var name = options.name;
-  var excited = options.excited || false;
-
+function greet(name, excited){
+  excited = excited || false;
+  var greeting = "Hi, " + name + "here!" ;
   if (excited === true){
-    return "Hi, " + name.toUpperCase + "here!" ;
+    return greeting.toUpperCase;
   }
-  return "Hi, " + name + "here!" ;
+  return greeting;
 }
 
 ///// Question 5
