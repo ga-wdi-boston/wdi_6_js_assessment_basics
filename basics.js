@@ -9,6 +9,7 @@ function allPets(pets) {
   });
    console.log("I have a " + pets);
 }
+// .5
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -16,6 +17,7 @@ function allPets(pets) {
 var friend = { name: 'Chris', age: 27, hair_color: 'blue' };
 
 friend.hair_color = 'green';
+// 1
 
 ///// Question 3
 // The function below is problematic. Write code that demonstrates the problem,
@@ -25,8 +27,9 @@ var square_plus_one = function(n){
   var squared = n * n;
   return squared + 1;
 };
+// 1
 
-// Nick's comment: otherwise, without labeling squared as VAR, you have squared a global variable
+// Nick's comment: otherwise, without labeling squared as VAR, you have squared as a global variable
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -54,7 +57,7 @@ var greet = function(name, excited) {
 };
 
 
-
+// .5
 
 ///// Question 5
 // Write a function called `twice` that accepts both a value and another
