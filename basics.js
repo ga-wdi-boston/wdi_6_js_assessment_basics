@@ -4,7 +4,7 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
-// Ans
+// Ans 1
 
 for (var i=0; i < pets.length; i++) {
   console.log("I have a "+pets[i]);
@@ -15,7 +15,7 @@ for (var i=0; i < pets.length; i++) {
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
-// Ans
+// Ans 2
 
 friend.hairColor = 'green';
 
@@ -27,7 +27,7 @@ var squarePlusOne = function(n){
   return squared + 1;
 };
 
-// Ans
+// Ans 3
 
 // `squared` will be interpreted to refer to the global variable
 // in this function, which may be used elsewhere,
@@ -53,7 +53,7 @@ def greet(name, excited)
 end
 */
 
-// Ans
+// Ans 4
 
 var greet = function(name, excited) {
   var greeting = "Hi, " + name + " here!"
@@ -73,6 +73,8 @@ var anna = {name: "Anna",
               return this.age*2;
             }
           }
+
+// Ans 5
 
 // What is `anna`? (e.g. method, function, string, etc.)
 
