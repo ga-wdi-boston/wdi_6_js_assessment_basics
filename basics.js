@@ -18,10 +18,10 @@ friend.hairColor = "green";
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
-var squarePlusOne = function(n){
-  squared = n * n;
-  return squared + 1;
-};
+// var squarePlusOne = function(n){
+//   squared = n * n;
+//   return squared + 1;
+// };
 
 // The way it is declared, square is a global var and we don't want that.
 // Also, we don't need to save n*n in a variable, we can just return it.
