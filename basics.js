@@ -50,7 +50,7 @@ var anna = {name: "Anna",
 // What does `this` refer to? 
 
 
-// If you are in console.log and you want to see anna's lucky number, how would you do that? 
+// If you want to return the value of anna's lucky number, how would you do that? 
 
 
-// If you want to change anna's name to wurble, how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that? 
