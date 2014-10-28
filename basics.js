@@ -1,3 +1,4 @@
+// SCORE: 4/5
 // I looked at my notes from yesterday's lecture and also google searches
 
 ///// Question 1
@@ -10,6 +11,15 @@ for(pets i=0; length = pets.length; i < length; i++) {
   console.log("I have a " + pets[i]);
 }
 
+//1
+// Can also do this with a for/each method:
+var iHaveA = function(element) {
+  return "I have a " + element;
+}
+console.log(pets.map(iHaveA));
+
+
+
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -17,6 +27,7 @@ for(pets i=0; length = pets.length; i < length; i++) {
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 friend.hairColor = 'green';
+//1
 
 
 ///// Question 3
@@ -29,6 +40,11 @@ var squarePlusOne = function(n){
 };
 
 //It's problematic because we have a new variable 'squared' but we never declared it as a new variable by assigning 'var ___'
+// 0.5
+
+// CORRECT ANSWER:
+// Problem is that sqaured doesn't have a var in front of it so it's a global variable
+// which is bad because it's possible to change the value of 'sqared' even outside of the function.
 
 
 
@@ -54,6 +70,19 @@ var greet = function(name, excited) {
     alert(greeting.toUpperCase());
   } else {
     alert(greeting);
+  }
+}
+
+// 0.5
+
+// CORRECT ANSWER
+var greet = function(name, excited) {
+  var greeting;
+  greeting = "Hi, " + name + " here!";
+  if(exited === true){  /// could even just have if (excited) without === true
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
   }
 }
 
@@ -83,3 +112,5 @@ console.log(anna.luckyNumber());
 
 // If you want to change anna's name to wurble, how would you do that?
 anna.name = "wurble";
+
+// 1
