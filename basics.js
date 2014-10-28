@@ -24,6 +24,8 @@ var squarePlusOne = function(n){
 
 This function is problematic becasuse the variable squared is not defined with a var in front of it, or
 at the beginning of the function/above the function.
+
+the problem is that squared is a global variable! and so can be changed outside of the function.
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
 
@@ -42,7 +44,7 @@ var greet, greeting;
 
 greet = function(name, excited) {
   greeting = "hi, " + name + " here!";
-  if (excited === true) {
+  if (excited === true) {     // can change to => if (excited) { and it will already evaluate for booleans
     return greeting.toUpperCase();
   } else {
     return greeting;
