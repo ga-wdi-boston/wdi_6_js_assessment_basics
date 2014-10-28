@@ -7,7 +7,7 @@
 var pets = ['cat', 'dog', 'wombat'];
 
 for (var item in pets) {  //looked up syntaxis
-  console.log(item);
+  console.log(pets[item]); // i forgot to add [item] element -0.5
 }
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -41,7 +41,7 @@ def greet(name, excited)
 end
 */
 var greet = function(name, excited){
-  var str = "Hi, " + name + " here!";
+  var str = "Hi, " + name + " here!"; // string interpolation in js
   if (excited === true) {
     str1 = str.toUpperCase(); //looked up toUpperCase
   } else {
@@ -66,7 +66,7 @@ var anna = {name: "Anna",
 // anna is an object
 
 // What are `name`, `age`, and `luckyNumber`?
-// parameters
+// parameters // should be properties!! - 0.2
 
 // What does `this` refer to?
 // this refers to object anna
