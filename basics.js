@@ -8,6 +8,10 @@ for (var i =0; i < myArray.length; i++) {
   console.log(pets[i])
 }
 
+Missed the prefix...correct answer:
+for (var i =0; i < myArray.length; i++) {
+  console.log("I have a " + pets[i])
+}
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -15,6 +19,10 @@ for (var i =0; i < myArray.length; i++) {
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 friend.hairColor = 'green'
+
+Forgot semicolon:
+friend.hairColor = 'green';
+
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
@@ -49,6 +57,18 @@ var greet = function(name, excited) {
   }
 }
 
+
+had toUpperCase wrong, removed console.log
+var greet = function(name, excited) {
+  var greeting = "Hi, " + name + " here!";
+  if (excited === true) {
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
+}
+
+
 ///// Question 5
 // Consider the following code.
 
@@ -61,7 +81,7 @@ var anna = {name: "Anna",
 
 
 // What is `anna`? (e.g. method, function, string, etc.) 
-anna is a prototype
+anna is a prototype / object
 
 // What are `name`, `age`, and `luckyNumber`? 
 those are properties
@@ -74,6 +94,9 @@ console.log(anna.luckyNumber());
 
 // If you want to change anna's name to wurble, how would you do that? 
 anna.name = wurble
+
+forgot quotation marks
+anna.name = "wurble"
 
 
 
