@@ -1,3 +1,5 @@
+// All correct
+
 ///// Question 1
 // Write a loop that would log each element of the array below to the console,
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
