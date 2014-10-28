@@ -8,6 +8,12 @@ for(var i = 0, length = pets.length; i < length; i++) {
   console.log("I have a " + pets[i]);
 }
 
+//alternative method
+var iHaveA = function(element) {
+  return "I have a " + element;
+}
+console.log(pets.map(iHaveA));
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
