@@ -95,3 +95,5 @@ var anna = {name: "Anna",
   anna.name = "wurble";
 
   // 1/1
+
+  // 4.5 / 5
