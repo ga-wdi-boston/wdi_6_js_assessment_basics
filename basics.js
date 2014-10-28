@@ -10,6 +10,19 @@ for (var i=0; i < pets.length; i++) {
   console.log("I have a "+pets[i]);
 }
 
+// CORRECTION: Better way
+
+// for (var i=0; length = pets.length; i < length; i++) {
+//   console.log("I have a "+pets[i]);
+// }
+
+// CORRECTION: Mapping
+
+// var reportPets = function(pet) {
+//   return "I have a " + pet;
+// }
+// console.log(pets.map(reportPets));
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
@@ -33,6 +46,9 @@ var squarePlusOne = function(n){
 // in this function, which may be used elsewhere,
 // and will be overwritten by the function.
 // Declare it with `var` to keep it to a local scope.
+
+// CORRECTION:
+// - can also be overwritten by anyone
 
 var squarePlusOne = function(n){
   var squared = n * n;
