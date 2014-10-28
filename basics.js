@@ -8,12 +8,16 @@ for (var i = 0, length = pets.length; i < length; i++) {
   console.log("I have a " + pets[i]);
 }
 
+//correct
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 friend.hairColor = "green"; 
+
+//correct
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
@@ -31,6 +35,7 @@ var squarePlusOne = function(n){
   return squared + 1;
 };
 
+//correct, it is a global variable without the 'var' keyword
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -49,11 +54,14 @@ end
 var greet = function(name, excited) {
   var greeting = "Hi, " + name + " here!";
   if (excited === true) {
-    return greeting.upperCase();
+    return greeting.toUpperCase();
   } else {
     return greeting;
   }
 }
+
+//Did not get the uppercase function correct but otherwise it is correct.
+//correct
 
 ///// Question 5
 // Consider the following code.
@@ -79,3 +87,5 @@ anna.luckyNumber();
 
 // If you want to change anna's name to wurble, how would you do that? 
 anna.name = 'wurble';
+
+//correct
