@@ -3,16 +3,32 @@
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
 
 var pets = ['cat', 'dog', 'wombat'];
+for(var i=0; i<=pets.length-1; i++){
+  console.log("I have a " + pets[i]);
 
+}
+
+//FOR-EACH
+  var iHaveA =  function(element){
+    return "I have a " + element;
+
+
+  }
+  console.log(pets.map(iHaveA));
+  pets.forEach(iHaveA)
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
+friend.hairColor = 'green'
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
+
+ // Squared is currently a global variable, though the function will work, this may cause fufture problems.
 var squarePlusOne = function(n){
+   var squared
   squared = n * n;
   return squared + 1;
 };
@@ -31,6 +47,18 @@ def greet(name, excited)
 end
 */
 
+var greet = function(name, excited){
+  var greeting = "Hi, " + name + " here!"
+
+  if(excited == true){ // can also just say if(excited) ==> and js will implicitly assume truthiness
+     return greeting.toUpperCase();
+  } else{
+    return greeting;
+  }
+  }
+
+
+
 ///// Question 5
 // Consider the following code.
 
@@ -41,16 +69,19 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+  anna is an Object; like a hash in ruby.
+
+// What are `name`, `age`, and `luckyNumber`?
+these are Properties.
 
 
-// What are `name`, `age`, and `luckyNumber`? 
+// What does `this` refer to?
+this  refers to the object anna.
 
 
-// What does `this` refer to? 
+// If you are in console.log and you want to see anna's lucky number, how would you do that?
+anna.luckyNumber()
 
-
-// If you are in console.log and you want to see anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to wurble, how would you do that? 
+// If you want to change anna's name to wurble, how would you do that?
+anna.name = 'Wurble'
