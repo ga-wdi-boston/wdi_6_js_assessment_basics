@@ -8,6 +8,14 @@ for(var i=0; i<=pets.length-1; i++){
 
 }
 
+//FOR-EACH
+  var iHaveA =  function(element){
+    return "I have a " + element;
+
+
+  }
+  console.log(pets.map(iHaveA));
+  pets.forEach(iHaveA)
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
@@ -20,7 +28,7 @@ friend.hairColor = 'green'
 
  // Squared is currently a global variable, though the function will work, this may cause fufture problems.
 var squarePlusOne = function(n){
-  // var squared, n
+   var squared
   squared = n * n;
   return squared + 1;
 };
@@ -42,7 +50,7 @@ end
 var greet = function(name, excited){
   var greeting = "Hi, " + name + " here!"
 
-  if(excited == true){
+  if(excited == true){ // can also just say if(excited) ==> and js will implicitly assume truthiness
      return greeting.toUpperCase();
   } else{
     return greeting;
