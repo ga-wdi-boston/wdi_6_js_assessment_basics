@@ -89,6 +89,7 @@ var anna = {name: "Anna",
 
 // What does `this` refer to? 
 // the constructor
+// boooo, `this` refers to the 'anna' object
 
 // If you are in console.log and you want to see anna's lucky number, how would you do that? 
 // console.log(anna.luckyNumber());
