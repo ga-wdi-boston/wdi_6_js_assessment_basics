@@ -4,7 +4,7 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
-for(var i=0, length=pets.length(); i < length; i++){
+for(var i = 0, length = pets.length; i < length; i++){
   console.log(pets[i]);
 }
 
@@ -49,7 +49,7 @@ var greet = function(name, excited){
   var greeting;
   greeting = "Hi, " + name + " here!";
 
-  if (excited === true){
+  if (excited){
     return greeting.toUpperCase(); // searched Google for upcase method
   } else {
     return greeting;
