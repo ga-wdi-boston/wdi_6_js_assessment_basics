@@ -2,7 +2,7 @@
 // Write a loop that would log each element of the array below to the console,
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
 
-var pets = ['cat', 'dog', 'snake'];
+var pets = ['cat', 'dog', 'wombat'];
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -10,8 +10,7 @@ var pets = ['cat', 'dog', 'snake'];
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 ///// Question 3
-// The function below is problematic. Write code that demonstrates the problem,
-// then modify the function (preserving its purpose) to remove the problem.
+// The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
 var squarePlusOne = function(n){
   squared = n * n;
@@ -22,9 +21,9 @@ var squarePlusOne = function(n){
 // Translate the Ruby method defined below into a JavaScript function.
 
 /*
-def greet(name, excited = false)
+def greet(name, excited)
   greeting = "Hi, #{name} here!"
-  if excited
+  if excited == true
     greeting.upcase
   else
     greeting
@@ -33,11 +32,25 @@ end
 */
 
 ///// Question 5
-// Write a function called `twice` that accepts both a value and another
-// function as arguments, and calls the provided function twice, both times
-// with the value as an argument. Below is an example value and function.
+// Consider the following code.
 
-var phrase = 'Odelay!';
-var shoutIt = function(text){
-  console.log(text.toUpperCase());
-};
+var anna = {name: "Anna",
+            age: 28,
+            luckyNumber: function() {
+              return this.age*2;
+            }
+          }
+
+// What is `anna`? (e.g. method, function, string, etc.) 
+
+
+// What are `name`, `age`, and `luckyNumber`? 
+
+
+// What does `this` refer to? 
+
+
+// If you are in console.log and you want to see anna's lucky number, how would you do that? 
+
+
+// If you want to change anna's name to wurble, how would you do that? 
