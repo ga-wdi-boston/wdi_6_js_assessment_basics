@@ -5,8 +5,11 @@
 var pets = ['cat', 'dog', 'wombat'];
 
 for(var i = 0, length = pets.length; i < length; i++){
-  console.log(pets[i]);
+  // console.log(pets[i]);
+  console.log("I have a " + pets[i]);
 }
+
+// .5/1 did not include the "I have a "
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -14,6 +17,8 @@ for(var i = 0, length = pets.length; i < length; i++){
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
 friend.hairColor = "green";
+
+// 1/1
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
@@ -30,6 +35,7 @@ var squarePlusOne = function(n){
   return (n * n) + 1;
 };
 
+// 1/1
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -55,6 +61,8 @@ var greet = function(name, excited){
     return greeting;
   }
 }
+
+// 1/1
 
 ///// Question 5
 // Consider the following code.
@@ -85,3 +93,5 @@ var anna = {name: "Anna",
 // If you want to change anna's name to wurble, how would you do that?
 
   anna.name = "wurble";
+
+  // 1/1
