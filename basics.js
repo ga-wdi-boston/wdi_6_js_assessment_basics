@@ -3,7 +3,7 @@
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
 
 var pets = ['cat', 'dog', 'wombat'];
-for (var i = 0; i < 3; i++) {console.log(pets[i]);}
+for (var i = 0; i < 3; i++) {console.log("I have a " + pets[i]);}
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
