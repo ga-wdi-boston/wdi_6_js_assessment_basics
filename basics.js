@@ -34,7 +34,11 @@ end
 */
 function greet(name, excited) {
   var greeting = "Hi, " + name + " here!";
-  return (excited? greeting.toUpperCase() : greeting);
+  if (excited) {
+    return greeting.toUpperCase();
+  else 
+    return greeting;
+  }
 }
 
 
@@ -57,7 +61,7 @@ In this context, 'this' refers to the specific object that is calling the anonyn
 the 'luckyNumber' function should return the value 56.
 
 // If you want to return the value of anna's lucky number, how would you do that? 
-return anna.luckyNumber
+return anna.luckyNumber()
 
 // If you want to change anna's name to "wurble", how would you do that? 
 anna.name = "wurble"
