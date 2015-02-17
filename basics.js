@@ -41,16 +41,17 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+//'anna is a variable.'
 
+// What are `name`, `age`, and `luckyNumber`?
+// 'name', 'age', and 'luckyNumber' are object literals.
 
-// What are `name`, `age`, and `luckyNumber`? 
+// What does `this` refer to?
+// 'this' refers to returning the object literal from the constructor function, meaning this.age, will return the age specified in the constructor function.
 
+// If you want to return the value of anna's lucky number, how would you do that?
+//this.luckyNumber
 
-// What does `this` refer to? 
-
-
-// If you want to return the value of anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to "wurble", how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that?
+// this.name = "wurble";
