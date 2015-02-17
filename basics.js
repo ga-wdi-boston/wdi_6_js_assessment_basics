@@ -4,19 +4,22 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
+console.log(pets.each)
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
+this.hairColor = 'green'
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
 var squarePlusOne = function(n){
-  squared = n * n;
+  {squared = n * n;}
   return squared + 1;
 };
 
+//this is problematic because the prototype should be in braces, so the return can grab the whole function squared.
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
 
@@ -41,16 +44,17 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+//'anna is a variable.'
 
+// What are `name`, `age`, and `luckyNumber`?
+// 'name', 'age', and 'luckyNumber' are object literals.
 
-// What are `name`, `age`, and `luckyNumber`? 
+// What does `this` refer to?
+// 'this' refers to returning the object literal from the constructor function, meaning this.age, will return the age specified in the constructor function.
 
+// If you want to return the value of anna's lucky number, how would you do that?
+//this.luckyNumber
 
-// What does `this` refer to? 
-
-
-// If you want to return the value of anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to "wurble", how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that?
+// this.name = "wurble";
