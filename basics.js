@@ -4,10 +4,16 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
+
+for each (pets) {
+  "I have a " += pets;
+}
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
+
+friend = {hairColor: 'green'}
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
@@ -31,6 +37,20 @@ def greet(name, excited)
 end
 */
 
+function greet(name, excited) {
+  greeting = "Hi, #{name} here!"
+  if (excited === true ) { greeting.upcase;
+   }
+   else {
+
+    greeting;
+   }
+
+
+
+}
+
+
 ///// Question 5
 // Consider the following code.
 
@@ -41,16 +61,18 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+object
+
+// What are `name`, `age`, and `luckyNumber`?
+parameters
+
+// What does `this` refer to?
+self
+
+// If you want to return the value of anna's lucky number, how would you do that?
+function luckyNumber()
 
 
-// What are `name`, `age`, and `luckyNumber`? 
-
-
-// What does `this` refer to? 
-
-
-// If you want to return the value of anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to "wurble", how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that?
+var anna = {name: "wurble"}
