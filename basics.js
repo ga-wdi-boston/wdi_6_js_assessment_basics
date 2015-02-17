@@ -4,18 +4,27 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
+for(var i = 0; i < pets.length; i ++){
+};
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
 
+friend.hairColor = 'green';
+console.log(friend)
+
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
+
+//
 
 var squarePlusOne = function(n){
   squared = n * n;
   return squared + 1;
 };
+
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -31,6 +40,8 @@ def greet(name, excited)
 end
 */
 
+
+
 ///// Question 5
 // Consider the following code.
 
@@ -41,16 +52,18 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+// 'anna' is an object.
+
+// What are `name`, `age`, and `luckyNumber`?
+// all of these are properties
 
 
-// What are `name`, `age`, and `luckyNumber`? 
+// What does `this` refer to?
+// 'this' refers to the object. In this case, 'this' = 'anna'
 
 
-// What does `this` refer to? 
+// If you want to return the value of anna's lucky number, how would you do that?
 
 
-// If you want to return the value of anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to "wurble", how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that?
