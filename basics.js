@@ -4,6 +4,7 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
+console.log(pets.each)
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
