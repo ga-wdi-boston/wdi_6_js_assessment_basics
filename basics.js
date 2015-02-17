@@ -4,9 +4,14 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
-for(pet in pets){
-  console.log("I have a " + pets[pet]);
+for(i in pets){
+  console.log("I have a " + pets[i]);
 };
+
+// for (var i = 0; i< pets.length; i++) {
+//   console.log("I have a " + pets[i]);
+// }
+
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -24,7 +29,11 @@ var squarePlusOne = function(n){
 };
 
 console.log(squarePlusOne(2));
-// This is problematic because the variable is not declared
+// This is problematic because the variable is not declared, global scope- not function scope- also verbose
+// another solution:
+// var squarePlusOne = function(n){
+//   return n * n + 1;
+// }
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -43,7 +52,7 @@ end
 var greet = function(name, excited){
   var greeting = "Hi " + name + " here";
     if(excited === true){
-      return greeting.upcase;
+      return greeting.toUpperCase(); // meant to fix this before submitting. whoops
     };
     return greeting;
 };
@@ -60,16 +69,16 @@ var anna = {name: "Anna",
           }
 
 // What is `anna`? (e.g. method, function, string, etc.)
-// string
+// string // variable/ object- I need more caffeine
 
 // What are `name`, `age`, and `luckyNumber`?
-// objects
+// properties - I need more caffeine
 
 // What does `this` refer to?
 // in this instance, this refers to var anna's age
 
 // If you want to return the value of anna's lucky number, how would you do that?
-console.log(anna.luckyNumber(2));
+console.log(anna.luckyNumber());
 
 // If you want to change anna's name to "wurble", how would you do that?
 anna.name = "wurble";
