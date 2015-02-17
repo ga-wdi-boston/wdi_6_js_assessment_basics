@@ -14,7 +14,7 @@ for (var i = 0; i < pets.length; i++){
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
-friend.hairColor = green;
+friend.hairColor = 'green';
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
