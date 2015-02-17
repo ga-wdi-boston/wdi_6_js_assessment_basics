@@ -3,9 +3,10 @@
 // prefixed with the text "I have a " (so "I have a cat", "I have a dog", etc.)
 
 var pets = ['cat', 'dog', 'wombat'];
-for (i in pets) {
+for (var i = 0; i < pets.length; i++) {
   console.log("I have a " + pets[i]);
 };
+
 
 
 ///// Question 2
@@ -18,10 +19,10 @@ friend.hairColor = 'green';
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
 // The variable squared is not declared so it has global scope.
+// No reason to use a variable
 
 var squarePlusOne = function(n){
-  var squared = n * n;
-  return squared + 1;
+  return n * n + 1;
 };
 
 ///// Question 4
@@ -55,6 +56,8 @@ var anna = {name: "Anna",
               return this.age*2;
             }
           }
+
+
 
 // What is `anna`? (e.g. method, function, string, etc.)
 // object
