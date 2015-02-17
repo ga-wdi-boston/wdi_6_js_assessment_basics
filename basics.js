@@ -4,7 +4,14 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
-for(i in pets){console.log("I have a " + pets[i] + ","); };
+for(var i in pets){console.log("I have a " + pets[i] + ","); };
+  //Don't use the for in for arrays!!
+
+for(var i = 0; i < pets.length; i ++)  {
+  console.log("I have a " + pets[i] + ",");
+   }
+
+
 
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
@@ -75,3 +82,25 @@ console.log(anna.luckyNumber());
 // If you want to change anna's name to "wurble", how would you do that?
 anna.name = "Wurble";
 console.log(anna.name);
+
+//Question 6
+//Create a person contructor that takes a name and age as argumements.
+//Initialize two people David and Anna
+//Create a new property luckyNumber that can be called on all persons
+
+var Person = function(name, age){
+  this.name = name;
+  this.age = age;
+};
+
+Person.prototype = {
+  luckyNumber: function(){
+    return Math.round(Math.random()* (100 - 1) + 1);
+  }
+};
+
+var david = new Person("David", 30);
+var anna = new Person("Anna", 27);
+
+console.log(david.name + " His age: " + david.age + ". His lucky number:" + david.luckyNumber());
+console.log(anna.name + " Her age: " + anna.age + ". Her lucky number: " + anna.luckyNumber());
