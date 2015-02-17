@@ -4,18 +4,23 @@
 
 var pets = ['cat', 'dog', 'wombat'];
 
+for (var i = 0; i < pets.length; i++) {
+  console.log("I have a " + pets[i]);
+};
+
 ///// Question 2
 // Change my friend's hair color to "green", without modifying the line below.
 
 var friend = { name: 'Chris', age: 27, hairColor: 'blue' };
+friend.hairColor = 'green';
 
 ///// Question 3
 // The function below is problematic. In 1-2 sentences explain why, and then fix the code.
 
 var squarePlusOne = function(n){
-  squared = n * n;
-  return squared + 1;
+   return n * n + 1;
 };
+// The code above doesnt use var, so it will change all of the squared variables in the code
 
 ///// Question 4
 // Translate the Ruby method defined below into a JavaScript function.
@@ -31,6 +36,15 @@ def greet(name, excited)
 end
 */
 
+var greet = function(name, excited){
+  var greeting = ("Hi, " + name + " here!")
+  if (excited === true) {
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
+};
+
 ///// Question 5
 // Consider the following code.
 
@@ -41,16 +55,20 @@ var anna = {name: "Anna",
             }
           }
 
-// What is `anna`? (e.g. method, function, string, etc.) 
+// What is `anna`? (e.g. method, function, string, etc.)
+//anna is a literal object
+
+// What are `name`, `age`, and `luckyNumber`?
+// they are properties of anna
+
+// What does `this` refer to?
+// this refers to anna
 
 
-// What are `name`, `age`, and `luckyNumber`? 
+// If you want to return the value of anna's lucky number, how would you do that?
+// call anna.luckyNumber();
 
 
-// What does `this` refer to? 
-
-
-// If you want to return the value of anna's lucky number, how would you do that? 
-
-
-// If you want to change anna's name to "wurble", how would you do that? 
+// If you want to change anna's name to "wurble", how would you do that?
+// anna.name = 'wurble';
+console.log(greet("Max", true));
