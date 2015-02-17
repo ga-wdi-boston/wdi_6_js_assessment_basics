@@ -41,7 +41,11 @@ end
 
 var greet = function(name, excited) {
   var greeting = "Hi, " + name + " here!"
-  excited ? return greeting.toUpperCase() : return greeting;
+  if (excited) {
+    return greeting.toUpperCase();
+  } else {
+    return greeting;
+  }
 };
 
 ///// Question 5
@@ -65,7 +69,25 @@ var anna = {name: "Anna",
 //the age of the specific object the function is meaning called from.
 
 // If you want to return the value of anna's lucky number, how would you do that?
-// anna.luckyNumber;
+// anna.luckyNumber();
 
 // If you want to change anna's name to "wurble", how would you do that?
 // anna.name = "wurble";
+
+//Question 6
+//create a person constructor with name and age
+//init two people, dava and anna
+//create a property luckyNumber that can be called on all persons.
+
+var Person = function(name, age){
+  this.name = name;
+  this.age = age;
+};
+Person.prototype = {
+  luckyNumber: function(){
+    return Math.floor(Math.random()*9+1);
+  }
+};
+var dave = new Person('Dave', 4);
+var anna = new Person('Anna', 5);
+console.log(anna.luckyNumber());
